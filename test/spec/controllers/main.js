@@ -30,9 +30,9 @@ describe('Controller: MainCtrl', function () {
     scope.endTime = 4;
     scope.clipIndex = 0;
     scope.upsertClip();
-    expect(scope.clips[scope.clips.length - 1].clipName).toBe(scope.clipName);
-    expect(scope.clips[scope.clips.length - 1].timeStart).toBe(scope.startTime);
-    expect(scope.clips[scope.clips.length - 1].timeEnd).toBe(scope.endTime);
+    expect(scope.clips[scope.clips.length - 1].clipName).toBe('Test clip');
+    expect(scope.clips[scope.clips.length - 1].timeStart).toBe(2);
+    expect(scope.clips[scope.clips.length - 1].timeEnd).toBe(4);
     expect(scope.clips[scope.clips.length - 1].time).toBe('2,4');
   });
 
