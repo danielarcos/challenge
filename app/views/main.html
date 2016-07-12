@@ -1,0 +1,10 @@
+<div>
+  <video id="videoChallenge" controls preload="metadata">
+    <source src="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4"  type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' data-original="http://grochtdreis.de/fuer-jsfiddle/video/sintel_trailer-480.mp4">
+  </video>
+  <div id="navigation">
+    <button ng-repeat="clip in clips" ng-click="changeClip($index)">{{clip.clipName}}</button>
+  </div>
+  <br>
+  <a href="" ng-click="manageClips()" class="btn btn-info" title="Search"><span class="glyphicon glyphicon-film" aria-hidden="true"></span></a>
+</div>
